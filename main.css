@@ -1,0 +1,293 @@
+/* -------------- GENERAL STYLES ---------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+/* Dynamic of the site by margin-bottom */
+
+h2,
+h3,
+p,
+ul,
+ol,
+img {
+  margin-bottom: 1.5rem;
+}
+
+.loc,
+.program,
+.gifts,
+.questions,
+.contact {
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  width: 95%;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/*--------HEADER--------*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.head {
+  padding: .625rem;
+  color: hsla(0, 0%, 100%, .9);
+  background: hsla(100, 0%, 0%, .5);
+  width: 100%;
+}
+
+h1 {
+  padding: 0.3rem;
+  color: #d2ba87;
+  font-size: 3.15rem;
+}
+
+.head span {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+/* --------------MAIN --------------*/
+
+main {
+  width: 100%;
+}
+
+/* --------------Location Styles --------------*/
+
+.locwrap img {
+  height: 7.5rem;
+}
+
+.locwrap h3 {
+  font-weight: 700;
+}
+
+.locwrap p {
+  font-family: 'Muli', sans-serif;
+}
+
+.locwrap::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25%;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+/*-------------Program Section Styles---------------------*/
+
+.program {
+  background: hsla(100, 0%, 0%, 0.6);
+  color: #d2ba87;
+  width: 100%;
+  font-family: 'Muli', sans-serif;
+}
+
+
+.prog-wrap p, li {
+  text-align: left;
+}
+
+.program h2 {
+  margin-top: 1rem;
+}
+
+.program p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+/*-------------Gifts Section---------------------*/
+.gifts img {
+  height: 7.5rem;
+}
+
+.gifts p:last-child {
+  /* To even out the bottom and top margins of this section. */
+  margin-bottom: 0;
+}
+
+/*-------------Question Section---------------------*/
+.questions {
+  background: hsla(100, 0%, 0%, 0.6);
+  color: #d2ba87;
+  width: 100%;
+}
+
+.questions h2 {
+  margin-top: 1rem;
+}
+
+.questions p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+.question-wrap::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: .1875rem;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+
+}
+
+/*-------------Footer---------------------*/
+
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/*=============MEDIA QUERIES===============*/
+
+/*-------------MQ Header---------------------*/
+@media (min-width: 768px) {
+  .tagline {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .head {
+    width: 50%;
+    border-radius: 4px;
+    padding: 1.25rem;
+  }
+}
+
+/*-------------MQ Loc---------------------*/
+
+@media (min-width: 768px) {
+  .locwrap {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .locwrap::after {
+    display: none;
+  }
+}
+
+/*-------------MQ Program---------------------*/
+
+@media (min-width: 768px) {
+  .prog-wrap {
+    display: inline-block;
+    width: 30%;
+  }
+}
+/*-------------MQ questions---------------------*/
+
+@media (min-width: 768px) {
+  .question-wrap {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+  .question-wrap::after {
+    display: none;
+  }
+  .question-wrap h3 {
+    text-align: left;
+  }
+}
